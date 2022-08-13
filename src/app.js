@@ -3,10 +3,10 @@ const cardFlip = (event) => {
     let card = event.target
     card.classList.toggle('displayed')
     if (!card.classList.contains('displayed')) {
-        card.src = "./images/Cards/card.svg"
+        card.src = "./images/cards/card.svg"
       } else {
         let why = card.classList[1]
-        card.src = `./images/Cards/card-${why}.svg`
+        card.src = `./images/cards/card-${why}.svg`
       }
   }
 }
@@ -17,12 +17,12 @@ const switchJourney = (event) => {
     journey.classList.toggle('education')
     if (journey.classList.contains('education')) {
       journey.src = "./images/education.svg"
-      document.querySelector('.school').src = "./images/Cards/card-education.svg"
-      document.querySelector('.work').src = "./images/Cards/card.svg"
+      document.querySelector('.school').src = "./images/cards/card-education.svg"
+      document.querySelector('.work').src = "./images/cards/card.svg"
     } else {
       journey.src = "./images/career.svg"
-      document.querySelector('.work').src = "./images/Cards/card-career.svg"
-      document.querySelector('.school').src = "./images/Cards/card.svg"
+      document.querySelector('.work').src = "./images/cards/card-career.svg"
+      document.querySelector('.school').src = "./images/cards/card.svg"
     }
   }
 }
