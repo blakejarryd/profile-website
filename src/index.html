@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css"/>
+  <link rel="icon" type="image/x-icon" href="./Images/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&family=Roboto&display=swap" rel="stylesheet">
+  <title>Blake Johnston</title>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="./Images/logo.svg" />
+    </div>
+    <div class="transparent"></div>
+    <div class="links">
+      <img class="nav-image" src="./Images/Cards/card-links.svg">
+      <div class="nav-links external">
+        <a href="https://www.linkedin.com/in/blake-j-johnston/" target="_blank">
+          <img src="./Images/Cards/card-linkedin.svg"/>
+        </a>
+        <a href="https://github.com/blakejarryd" target="_blank">
+          <img src="./Images/Cards/card-github.svg"/>
+        </a>
+        <a href="resume" target="_blank">
+          <img src="./Images/Cards/card-resume.svg"/>
+        </a>
+        <a href="mailto: blakejarrydjohnston@gmail.com" target="_blank">
+          <img src="./Images/Cards/card-email.svg"/>
+        </a>
+      </div>
+    </div>
+    <div class="links">
+      <img class="nav-image" src="./Images/Cards/card-nav.svg"/>
+      <div class="nav-links page">
+        <a href="#heart">
+          <img src="./Images/Cards/card-heart.svg"/>
+        </a>
+        <a href="#club">
+          <img src="./Images/Cards/card-club.svg"/>
+        </a>
+        <a href="#diamond">
+          <img src="./Images/Cards/card-diamond.svg"/>
+        </a>
+        <a href="#spade">
+          <img src="./Images/Cards/card-spade.svg"/>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <header>
+    <img class = "header-image" src="./Images/profile-banner.svg" usemap="#image-map">
+  </header>
+  <main>
+    <div id="heart" class="why">
+     <div class="cards">
+        <img class = "card why1" src="./Images/cards/card.svg"/>
+        <img class = "card why2" src="./Images/cards/card.svg"/>
+        <img class = "card why3" src="./Images/cards/card.svg"/>
+        <img class = "card why4" src="./Images/cards/card.svg"/>
+      </div>
+      <img class="heart" src="./Images/hearts.svg"/>
+    </div>
+    <div id="club" class="journey">
+      <div class="journey-image-container"> 
+        <img class="journey-image" src="./Images/career.svg"/>
+        <div class="selector">
+          <img class="journey-selector work" src="./Images/cards/card-career.svg"/>
+          <img class="journey-selector school" src="./Images/cards/card.svg"/>
+        </div>
+      </div>
+      <img class="club" src="./Images/clubs.svg"/>
+    </div>
+    <div id="diamond" class="projects-container">
+      <div class="projects">
+        <h3>CRuMb</h3>
+        <div class="project">
+          <div class="tabs">
+            <div class="tab tab-displayed">Product</div>
+            <div class="tab">Code</div>
+          </div>
+          <a 
+            data-product-link="https://crumbcrm.herokuapp.com/" 
+            data-code-link="https://github.com/blakejarryd/CRuMb"
+            data-product-image="./Images/projects/crumb.png"
+            data-code-image="./Images/projects/crumb-github.png"
+            href="https://crumbcrm.herokuapp.com/" 
+            target="_blank"
+          >
+            <img src="./Images/projects/crumb.png">
+          </a>
+          <div class="details">
+            <div class="product">
+              <p>The CRM that knows every crumb of data counts.</p>
+              <p>A Customer Relationship Management (CRM) application.</p>
+              <p>Track customers, sales and your team data all in the Crumb portal.</p>
+              <p>Analyse sales data to make informed decisions for your business. </p>
+            </div>
+            <div class="code">
+              <p>Node JS, Express, MongoDB, EJS, Bootstrap, Heroku</p>
+              <p>RESTful API architecture using Node Express framework and Mongo for the DB. The app would be better suited to a SQL DB.</p>
+              <p>Server side page rendering using EJS templates. Bootstrap used for the CSS framework.</p>
+              <p>Hosted with Heroku.</p>
+            </div>
+          </div>
+        </div>
+        <h3>Jello</h3>
+        <div class="project">
+          <div class="tabs">
+            <div class="tab tab-displayed">Product</div>
+            <div class="tab">Code</div>
+          </div>
+          <a 
+            data-product-link="https://jellokanbanboard.herokuapp.com" 
+            data-code-link="https://github.com/blakejarryd/Jello"
+            data-product-image="./Images/projects/jello.png"
+            data-code-image="./Images/projects/jello-github.png"
+            href="https://jellokanbanboard.herokuapp.com" 
+            target="_blank"
+          >
+            <img src="./Images/projects/jello.png">
+          </a>
+          <div class="details">
+            <div class="product">
+              <p>A kanban board that doesn’t take itself too seriously.</p>
+              <p>Jello helps teams get a jiggle on.</p>
+              <p>Reduce the project wobbles and gets everyone gelling.</p> 
+              <p>Jello is the project management tool you can set and forget with confidence. </p>
+            </div>
+            <div class="code">
+              <p>React, Node JS, Express, MongoDB, Bootstrap, Heroku</p>
+              <p>React front-end.</p>
+              <p>RESTful API architecture using Node Express framework and Mongo for the DB.</p>
+              <p>Hosted with Heroku.</p>
+            </div>
+          </div>
+        </div>
+        <h3>Tic-Tac-Toe</h3>
+        <div class="project">
+          <div class="tabs">
+            <div class="tab tab-displayed">Product</div>
+            <div class="tab">Code</div>
+          </div>
+          <a 
+          data-product-link="https://blakejarryd.github.io/Tic-Tac-Toe" 
+          data-code-link="https://github.com/blakejarryd/Tic-Tac-Toe"
+          data-product-image="./Images/projects/tictactoe.png"
+          data-code-image="./Images/projects/tictactoe-github.png"
+          href="https://blakejarryd.github.io/Tic-Tac-Toe" 
+          target="_blank"
+        >
+            <img src="./Images/projects/tictactoe.png">
+          </a>
+          <div class="details">
+            <div class="product">
+              <p>Old faithful Tic-Tac-Toe.</p>
+              <p>Sure it's a little dull, it sure can't compete with a card game.</p>
+              <p>However it's been jazzed up a customisable themes and grid sizes.</p>
+              <p>Can you beat the hard AI?</p>
+            </div>
+            <div class="code">
+              <p>Javascript, HTML, CSS, GitHub Pages</p>
+              <p>Vanilla no frills JS, HTML & CSS, much like this website.</p>
+              <p>The Jetstar of front-end web dev.</p>
+              <p>Hosted with GitHub Pages.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+        <img class="diamond" src="./Images/Diamonds.svg"/>
+    </div>
+    <div id="spade" class="tools">
+      <div class="skills">
+        <div class="skill">
+          <img class="skill-card" src="./Images/Cards/card-blank.svg" />
+          <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
+            <p class="top-left">JavaScript</p>
+            <p class="bottom-right">JavaScript</p>
+        </div>
+        <div class="skill special">
+          <img class="skill-card" src="./Images/Cards/card-blank.svg" />
+          <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg" /> 
+          <p class="top-left">Node</p>
+          <p class="bottom-right">Node</p>
+        </div>
+        <div class="skill">
+          <img class="skill-card" src="./Images/Cards/card-blank.svg" />
+          <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />    
+          <p class="top-left">React</p>
+          <p class="bottom-right">React</p>
+        </div>
+        <div class="skill">
+          <img class="skill-card" src="./Images/Cards/card-blank.svg" />
+          <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" />
+          <p class="top-left">Express</p>
+          <p class="bottom-right">Express</p>
+        </div>
+        <div class="skill">
+          <img class="skill-card" src="./Images/Cards/card-blank.svg" />
+          <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+          <p class="top-left">git</p>
+          <p class="bottom-right">git</p>
+        </div>
+        <div class="skill">
+          <img class="skill-card" src="./Images/Cards/card-blank.svg" />
+          <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" /> 
+          <p class="top-left">Python</p>
+          <p class="bottom-right">Python</p>
+        </div>
+        <div class="skill">
+          <img class="skill-card" src="./Images/Cards/card-blank.svg" />
+          <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" />
+          <p class="top-left">Flask</p>
+          <p class="bottom-right">Flask</p>
+        </div>
+        <div class="skill">
+          <img class="skill-card" src="./Images/Cards/card-blank.svg" />
+          <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" />
+          <p class="top-left">MS SQL</p>
+          <p class="bottom-right">MS SQL</p>
+        </div>
+        <div class="skill">
+          <img class="skill-card" src="./Images/Cards/card-blank.svg" />
+          <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg" />
+          <p class="top-left">postgreSQL</p>
+          <p class="bottom-right">postgreSQL</p>
+        </div>
+        <div class="skill">
+          <img class="skill-card" src="./Images/Cards/card-blank.svg" />
+          <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
+          <p class="top-left">MongoDB</p>
+          <p class="bottom-right">MongoDB</p>
+        </div>
+        <div class="skill">
+          <img class="skill-card" src="./Images/Cards/card-blank.svg" />
+          <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" />
+          <p class="top-left">HTML</p>
+          <p class="bottom-right">HTML</p>
+        </div>
+        <div class="skill">
+          <img class="skill-card" src="./Images/Cards/card-blank.svg" />
+          <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" />
+          <p class="top-left">CSS</p>
+          <p class="bottom-right">CSS</p>
+        </div>
+        <div class="skill">
+          <img class="skill-card" src="./Images/Cards/card-blank.svg" />
+          <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" />
+          <p class="top-left">AWS</p>
+          <p class="bottom-right">AWS</p>
+        </div>
+        <div class="skill">
+          <img class="skill-card" src="./Images/Cards/card-blank.svg" />
+          <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" />
+          <p class="top-left">Jira</p>
+          <p class="bottom-right">Jira</p>
+        </div> 
+      </div>
+      <img class="spade" src="./Images/Spades.svg"/>
+    </div>
+  </main>
+</body>
+<script type="text/javascript" src="./app.js"></script>
+</html>
+

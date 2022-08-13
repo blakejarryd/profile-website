@@ -1,0 +1,254 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ECF2F7;
+  width: 100vw; 
+  font-family: 'Roboto', sans-serif;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  height: 10%;
+  background-color: #507789;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+}
+
+.transparent {
+  width: 95%;
+}
+
+.links {
+  margin: 0.5%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.nav-image {
+ height: 100%;
+}
+
+.nav-links {
+  display: none;
+  margin-top: 6%;
+}
+
+.links:hover .nav-links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  top: 100%;
+  position: absolute
+}
+
+nav img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.header-image {
+  width: 100%;
+  margin-top: 15%;
+  margin-bottom: 10%;
+}
+
+main {
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+  background-color: #ECF2F7;
+}
+
+.why {
+  display: flex;
+  flex-basis: auto;
+  padding-bottom: 5%;
+  width: 100%;
+}
+
+.cards {
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  cursor: pointer;
+  width: 24.5%;
+  z-index: 10;
+}
+
+.heart, .club, .diamond, .spade {
+  width: 20%;
+  left: 0
+}
+
+
+
+.journey {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: white;
+  display: flex;
+  flex-basis: auto
+}
+
+.selector {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.journey-selector {
+  opacity: 0.9;
+  width: 5%;
+  cursor: pointer;
+}
+
+.journey-image-container {
+  width: 80%;
+  margin-top: 10%;
+}
+
+/* .words {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 28px;
+  margin: 15%;
+  margin-top: 8%;
+} */
+
+.journey-image {
+  margin: 1% 5%;
+  width: 90%;
+}
+
+.projects-container {
+  font-family: 'Quicksand', sans-serif;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: #ECF2F7;
+  display: flex;
+}
+
+.projects {
+  width: 80%;
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  margin-left: 50px;
+}
+
+.project {
+  margin-left: 10%;
+  margin-bottom: 5%;
+  width:90%;
+  display: grid;
+  grid-template-rows: auto, 1fr;
+  grid-template-columns: 4fr 6fr;
+  background-color: white;
+}
+
+.tabs {
+  grid-column-start: span 2;
+  display: flex;
+  justify-content: space-around;
+  background-color: #c3d6e6;
+  cursor: pointer
+}
+
+.tab {
+  width: 100%;
+  text-align: center;
+  padding: 2%;
+  color: grey;
+}
+
+.tab-displayed {
+  border-bottom: 3px solid #FD7702;
+  color: black;
+}
+
+.projects h3{
+  text-align: center;
+  font-size: 4vh;
+}
+
+.project img {
+  width: 80%;
+  margin: 10%
+}
+
+.details p {
+  font-size: 1.5vh;
+}
+
+.project img:hover {
+  box-shadow: 0px 5px 15px black;
+  cursor: pointer;
+}
+
+.code, .product {
+  margin: 8%
+}
+
+.code {
+  display: none;
+}
+
+.tools {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: white;
+  display: flex;
+  flex-basis: auto
+}
+
+.skills {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(6, 15%);
+  padding-left: 5%;
+}
+
+.skill {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30%;
+  color: #053D57;
+}
+
+.skill:hover {
+  bottom: 10%;
+  color: #FD7702;
+}
+
+.skill-card {
+  width: 150%
+}
+
+.skill-icon {
+  position: absolute;
+  width: 80%;
+}
+
+.top-left {
+  position: absolute;
+  top: 5%;
+  left: 0
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 5%;
+  right: 0
+}
+
+
