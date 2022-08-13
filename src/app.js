@@ -3,10 +3,10 @@ const cardFlip = (event) => {
     let card = event.target
     card.classList.toggle('displayed')
     if (!card.classList.contains('displayed')) {
-        card.src = "./images/cards/card.svg"
+        card.src = "./Images/cards/card.svg"
       } else {
         let why = card.classList[1]
-        card.src = `./images/cards/card-${why}.svg`
+        card.src = `./Images/cards/card-${why}.svg`
       }
   }
 }
@@ -16,13 +16,13 @@ const switchJourney = (event) => {
     let journey = document.querySelector('.journey-image')
     journey.classList.toggle('education')
     if (journey.classList.contains('education')) {
-      journey.src = "./images/education.svg"
-      document.querySelector('.school').src = "./images/cards/card-education.svg"
-      document.querySelector('.work').src = "./images/cards/card.svg"
+      journey.src = "./Images/education.svg"
+      document.querySelector('.school').src = "./Images/cards/card-education.svg"
+      document.querySelector('.work').src = "./Images/cards/card.svg"
     } else {
-      journey.src = "./images/career.svg"
-      document.querySelector('.work').src = "./images/cards/card-career.svg"
-      document.querySelector('.school').src = "./images/cards/card.svg"
+      journey.src = "./Images/career.svg"
+      document.querySelector('.work').src = "./Images/cards/card-career.svg"
+      document.querySelector('.school').src = "./Images/cards/card.svg"
     }
   }
 }
@@ -37,7 +37,7 @@ const tabToggle = (event) => {
     }
     tab.classList.add('tab-displayed')
     projectDetailsSwitch(tab)
-    projectImageSwitch(tab)
+    projectImageswitch(tab)
   }
 }
 
@@ -52,7 +52,7 @@ const projectDetailsSwitch = (tab) => {
   }
 }
 
-const projectImageSwitch = (tab) => {
+const projectImageswitch = (tab) => {
   const project = tab.parentElement.parentElement
   data = project.querySelector('a').dataset
   console.log(data)
