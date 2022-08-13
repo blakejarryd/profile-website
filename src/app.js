@@ -65,7 +65,6 @@ const projectImageSwitch = (tab) => {
   }
 }
 
-
 const body = document.querySelector('body')
 body.addEventListener('click', cardFlip);
 body.addEventListener('click', switchJourney);
