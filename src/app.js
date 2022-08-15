@@ -65,6 +65,10 @@ const projectImageswitch = (tab) => {
   }
 }
 
+window.addEventListener("hashchange", function () {
+  window.scrollTo(window.scrollX, window.scrollY - 100);
+});
+
 const body = document.querySelector('body')
 body.addEventListener('click', cardFlip);
 body.addEventListener('click', switchJourney);
