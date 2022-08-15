@@ -3,36 +3,47 @@ body {
   padding: 0;
   background-color: #ECF2F7;
   width: 100vw; 
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 nav {
   position: fixed;
   width: 100%;
   display: flex;
-  justify-content: flex-end;
-  height: 10%;
+  justify-content: space-between;
+  height: 8%;
   background-color: #507789;
   z-index: 100;
 }
 
-.logo {
-  display: flex;
+nav a {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-decoration: none;
+ min-width: 10%;
+ color: #F2F1EF;
 }
 
-.transparent {
-  width: 95%;
+nav a:hover {
+  background-color: grey;
+}
+
+
+.logo {
+  display: flex;
 }
 
 .links {
   margin: 0.5%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   position: relative;
 }
 
 .nav-image {
- height: 100%;
+ height: 80%;
 }
 
 .nav-links {
@@ -68,7 +79,8 @@ main {
 .why {
   display: flex;
   flex-basis: auto;
-  padding-bottom: 5%;
+  padding-top: 10%;
+  padding-bottom: 10%;
   width: 100%;
 }
 
@@ -84,7 +96,7 @@ main {
   z-index: 10;
 }
 
-.heart, .club, .diamond, .spade {
+.heart, .club, .diamond, .spade, .joker {
   width: 20%;
   left: 0
 }
@@ -92,8 +104,8 @@ main {
 
 
 .journey {
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 10%;
+  padding-bottom: 10%;
   background-color: white;
   display: flex;
   flex-basis: auto
@@ -115,13 +127,6 @@ main {
   width: 80%;
   margin-top: 10%;
 }
-
-/* .words {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 28px;
-  margin: 15%;
-  margin-top: 8%;
-} */
 
 .journey-image {
   margin: 1% 5%;
@@ -251,4 +256,18 @@ main {
   right: 0
 }
 
+.passions-container {
+  display: flex;
+  flex-basis: auto;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  width: 100%;
+  background-color: white;
+}
+
+.passions {
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
 
