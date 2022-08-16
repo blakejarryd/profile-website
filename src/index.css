@@ -82,7 +82,7 @@ nav p {
 
 .nav-links a img {
   margin: 10%;
-  width: 80%
+  width: 100%
 }
 
 .links:hover .nav-links {
@@ -361,7 +361,13 @@ footer {
 @media (max-width: 768px) {
   nav {
     height: 50px;
-    font-size: 10px;
+    font-size: 8px;
+  }
+  .links {
+    margin-right: 3%;
+  }
+  .nav-links a img {
+    width: 130%
   }
   .header-image {
     margin-top: 25%;
