@@ -328,7 +328,6 @@ main {
 }
 
 .passion {
-  /* background-color: #ECF2F7; */
   margin: 1%;
   border-radius: 10px;
   display: flex;
@@ -399,6 +398,7 @@ footer {
   .passions {
     grid-template-columns: 1fr;
     font-size: 12px;
+    margin-left: 10%;
   }
   .passion-images {
     display: grid;
