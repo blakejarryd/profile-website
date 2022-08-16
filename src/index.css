@@ -190,7 +190,7 @@ main {
   margin-bottom: 5%;
   width:90%;
   display: grid;
-  grid-template-rows: auto, 1fr;
+  grid-template-rows: auto, auto;
   grid-template-columns: 4fr 6fr;
   background-color: white;
 }
@@ -388,7 +388,7 @@ footer {
     overflow: hidden;
   }
   .project {
-    grid-template-rows: auto 3fr 6fr;
+    grid-template-rows: auto 3fr auto;
   }
   .project a {
     grid-column: span 2;
