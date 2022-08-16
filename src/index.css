@@ -75,13 +75,14 @@ nav p {
 .nav-links {
   display: none;
   margin-top: 6%;
-  /* width: 100%; */
+  width: 5vw;
   top: 100%;
   position: absolute
 }
 
 .nav-links a img {
-  margin: 10%
+  margin: 10%;
+  width: 80%
 }
 
 .links:hover .nav-links {
@@ -161,7 +162,7 @@ main {
 
 .journey-image-container {
   width: 80vw;
-  margin-top: 10vh;
+  margin-top: 5%;
 }
 
 .journey-image {
@@ -252,7 +253,7 @@ main {
 .skills {
   width: 80%;
   display: grid;
-  grid-template-columns: repeat(9, 10%);
+  grid-template-columns: repeat(8, 12%);
   margin-top: 5%;
   padding-left: 5%;
 }
@@ -273,12 +274,12 @@ main {
 }
 
 .skill-card {
-  width: 135%
+  width: 150%
 }
 
 .skill-icon {
   position: absolute;
-  width: 67%;
+  width: 75%;
 }
 
 .top-left {
@@ -360,7 +361,7 @@ footer {
 @media (max-width: 768px) {
   nav {
     height: 50px;
-    font-size: 12px;
+    font-size: 10px;
   }
   .header-image {
     margin-top: 25%;
