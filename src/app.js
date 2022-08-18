@@ -14,15 +14,11 @@ const cardFlip = (event) => {
 const switchJourney = (event) => {
   if (event.target.classList.contains('journey-selector')) {
     let journey = document.querySelector('.journey-image')
-    journey.classList.toggle('education')
-    if (journey.classList.contains('education')) {
+    let selector = event.target
+    if (selector.innerHTML === 'Education') {
       journey.src = "./Images/education.svg"
-      document.querySelector('.school').src = "./Images/cards/card-education.svg"
-      document.querySelector('.work').src = "./Images/cards/card.svg"
     } else {
       journey.src = "./Images/career.svg"
-      document.querySelector('.work').src = "./Images/cards/card-career.svg"
-      document.querySelector('.school').src = "./Images/cards/card.svg"
     }
   }
 }
@@ -36,14 +32,15 @@ const tabToggle = (event) => {
       t.classList.remove('tab-displayed')
     }
     tab.classList.add('tab-displayed')
-    projectDetailsSwitch(tab)
-    projectImageswitch(tab)
+    if (!tab.classList.contains('journey-selector')) {
+      projectDetailsSwitch(tab)
+      projectImageswitch(tab)
+    }
   }
 }
 
 const projectDetailsSwitch = (tab) => {
   if (tab.innerHTML === 'Code') {
-    console.log(tab.parentElement.parentElement)
     tab.parentElement.parentElement.querySelector('.code').style.display = 'block'
     tab.parentElement.parentElement.querySelector('.product').style.display = 'none'
   } else {
@@ -55,7 +52,6 @@ const projectDetailsSwitch = (tab) => {
 const projectImageswitch = (tab) => {
   const project = tab.parentElement.parentElement
   data = project.querySelector('a').dataset
-  console.log(data)
   if (tab.innerHTML === 'Code') {
     project.querySelector('a').href = data.codeLink
     project.querySelector('img').src = data.codeImage

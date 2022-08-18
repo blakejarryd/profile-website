@@ -145,18 +145,20 @@ main {
   padding-bottom: 10%;
   background-color: white;
   display: flex;
-  flex-basis: auto
+  flex-basis: auto;
+}
+
+.selector-container {
+  display: flex;
+  justify-content: center;
 }
 
 .selector {
+  width: 20%;
   display: flex;
-  justify-content: center;
   background-color: white;
-}
-
-.journey-selector {
-  opacity: 0.9;
-  width: 5vw;
+  margin: 0% 5%;
+  background-color: #c3d6e6;
   cursor: pointer;
 }
 
@@ -166,7 +168,7 @@ main {
 }
 
 .journey-image {
-  margin: 1% 5%;
+  margin: 0 5%;
   width: 90%;
 }
 
@@ -370,6 +372,9 @@ footer {
   }
   .header-image {
     margin-top: 25%;
+  }
+  .selector {
+    width: 40%;
   }
   .cards {
     display: grid;
