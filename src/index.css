@@ -95,14 +95,15 @@ nav p {
   z-index: 0;
 }
 
-header main {
-  width: 100vw;
+header {
+  display: flex;
+  justify-content: center;
 }
 
 .header-image {
-  width: 100vw;
+  width: 80%;
   margin-top: 15%;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 main {
