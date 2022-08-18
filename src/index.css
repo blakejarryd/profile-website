@@ -56,7 +56,9 @@ nav p {
 }
 
 .logo img {
-  height: 100%;
+  height: 90%;
+  padding-bottom: 10%;
+  padding-left: 10%;
 }
 
 .links {
@@ -310,6 +312,7 @@ main {
   display: grid;
   grid-template-columns: 3;
   grid-template-rows: 3;
+  margin: 0 5%;
 }
 
 .passions .description {
